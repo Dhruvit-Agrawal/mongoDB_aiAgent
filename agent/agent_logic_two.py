@@ -2,14 +2,13 @@ from core.chain_builder import agent
 
 from langchain_core.output_parsers import SimpleJsonOutputParser
 
-output_parser = SimpleJsonOutputParser()
+output_parser = SimpleJsonOutputParser()# my name is dhruv ---> name: dhruv
 
 def run_agent(query):
-    print("🤖 Mongo LLM Agent is ready! Type 'exit' to quit.")
+    print("Mongo LLM Agent is ready! Type 'exit' to quit.")
     print(query)
     try:
         response = agent.invoke({"messages": [{"role": "user", "content": query}]})
-
 
         parsed = None
         try:

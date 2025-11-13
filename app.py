@@ -12,7 +12,8 @@ if st.button("Send Query"):
         st.warning("Please enter a query.")
     else:
         with st.spinner("Sending query to agent..."):
-            # Replace URL with your actual FastAPI endpoint
+            
+        
             api_url = "http://localhost:8000/query"
             try:
                 response = requests.post(api_url, json={"query": user_query})
