@@ -6,7 +6,7 @@ Users can perform real CRUD operations without writing queries, using plain Engl
 This project explores agentic AI patterns where an LLM interprets intent and safely executes database tools.
 
 ---
-![alt text](agent_architecture_schema.png>)
+
 
 ## Features
 
