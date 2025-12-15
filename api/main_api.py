@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from fastapi.concurrency import run_in_threadpool
+
 from pydantic import BaseModel
 from agent.agent_logic_two import run_agent
 
@@ -27,8 +27,7 @@ async def handle_query(request: QueryRequest):
     try:
         print(f"request:{request}")
         print(f"query: {request.query}")
-        # Use threadpool for sync agent call to avoid blocking event loop.
-        #result = await run_in_threadpool(run_agent, request.query)
+
         query=request.query
         result = run_agent(query)
         return {"status": "success", "response": result}
