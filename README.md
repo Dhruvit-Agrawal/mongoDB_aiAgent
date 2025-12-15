@@ -178,9 +178,3 @@ Example request body:
 Contributions and discussions are welcome.
 
 If you are interested in agentic systems, database tooling, or backend architecture, feel free to open an issue or pull request.
-
----
-
-## License
-
-MIT License
